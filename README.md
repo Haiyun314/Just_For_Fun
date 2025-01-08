@@ -18,5 +18,5 @@ This project originally used an RCNN architecture to simulate the 2D heat equati
 ![Rcnn-Pinns](./results/rcnn_pinns.gif)
 
 ## Donut
-an example of Projection (rending issue)
+an example of Projection (rendering issue)
 ![Donut](./results/donut.gif)
