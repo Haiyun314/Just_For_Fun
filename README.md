@@ -15,7 +15,8 @@ Here’s a collection of fun projects—some might be failed experiments, while 
 ## Rcnn_Pinns
 (Failed Experiment)
 This project originally used an RCNN architecture to simulate the 2D heat equation, but the results were "sehr schlechte". The architecture was then rebuilt using a CNN structure, but the outcomes are still disappointing. I might revisit and reconstruct it when a new idea strikes.
+![Rcnn-Pinns](./results/rcnn_pinns.gif)
 
 ## Donut
-an example of Projection
+an example of Projection (rending issue)
 ![Donut](./results/donut.gif)

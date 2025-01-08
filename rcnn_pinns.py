@@ -78,7 +78,6 @@ def train_rcnn(input_data_init, layers, steps=10, epochs=100, learning_rate=0.00
             gradients = tape.gradient(total_loss, cnn_model.trainable_variables)
             optimizer.apply_gradients(zip(gradients, cnn_model.trainable_variables))
 
-            # Print loss at every batch
             print(f"Epoch {epoch + 1}/{epochs}, Batch {batch + 1}/{batch_numbers}, Loss: {total_loss.numpy()}")
 
     return cnn_model
@@ -89,13 +88,13 @@ def plot_results(images, save):
     ims = []
     for image in images:
         im = plt.imshow(image, animated=True, cmap='hot')
-        plt.pause(0.1)
-        # ims.append([im])
+        # plt.pause(0.1)
+        ims.append([im])
     ani = animation.ArtistAnimation(fig, ims, interval=200, repeat_delay=0)
     if save:
         if not os.path.exists('results'):
             os.makedirs('results')
-        ani.save('results/rcnn_pinns.gif', writer='pillow', fps=1)
+        ani.save('results/rcnn_pinns.gif', writer='pillow', fps=0.3)
     plt.show()
 
 
@@ -128,7 +127,6 @@ def main(input_data, layers,train=True, predict_data=1000, steps=10, epochs=100,
 
 
 if __name__ == '__main__':
-    # Initialize the first two data points
     size = 40
     time_frame = 50
     x = np.linspace(1, 2, size)
