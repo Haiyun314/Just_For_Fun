@@ -10,7 +10,8 @@ Here’s a collection of fun projects—some might be failed experiments, while 
 ![Hopping](./results/hopalong_attractor.png)
 
 ## Fourier
-
+Fourier method simulate heat equation
+![Fourier](./results/heat_eq.gif)
 
 ## Rcnn_Pinns
 (Failed Experiment)
