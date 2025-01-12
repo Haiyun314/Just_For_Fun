@@ -2,6 +2,7 @@
 - [Fourier](#Fourier)
 - [Rcnn-Pinns](#Rcnn_Pinns)
 - [Donut](#Donut)
+- [Middle States](#middle-states)
 
 # Just_For_Fun
 Here’s a collection of fun projects—some might be failed experiments, while some result in interesting creations. 
@@ -21,3 +22,6 @@ This project originally used an RCNN architecture to simulate the 2D heat equati
 ## Donut
 an example of Projection (rendering issue)
 ![Donut](./results/donut.gif)
+
+## Middle States
+![middle states](./results/hidden_layers.png)
