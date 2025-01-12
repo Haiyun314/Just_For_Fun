@@ -6,11 +6,10 @@ fdm = plt.imread('./results/fdm_result.png')
 pinn_tf = plt.imread('./results/pinns_tf.png')
 without_pinns = plt.imread('./results/without_init_pinns_tf.png')
 
-def diff(image1, image2):
-    image1 = image1/255
-    image2 = image2/255
-    return np.sum(np.abs(image1 - image2))
 
-print('Difference between fourier and finite difference method:', diff(four, fdm))
-print('Difference between fourier and PINNs with tensorflow:', diff(four, pinn_tf))
-print('Difference between fourier and PINNs without initialization with tensorflow:', diff(four, without_pinns))
+def diff(image1, image2):
+    return np.mean(np.abs(image1 - image2)), np.sqrt(np.mean(np.square(image1 - image2)))
+
+print(f"Difference between Fourier and Finite Difference methods: L1 = {diff(four, fdm)[0]:.4f}, L2 = {diff(four, fdm)[1]:.4f}")
+print(f"Difference between Fourier and PINNs: L1 = {diff(four, pinn_tf)[0]:.4f}, L2 = {diff(four, pinn_tf)[1]:.4f}")
+print(f"Difference between Fourier and PINNs without initialization: L1 = {diff(four, without_pinns)[0]:.4f}, L2 = {diff(four, without_pinns)[1]:.4f}")
