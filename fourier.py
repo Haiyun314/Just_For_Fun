@@ -2,10 +2,10 @@ import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 
-Lx = 10        
-Ly = 10        
-Nx = 128        # Number of grid points
-Ny = 128      
+Lx = 1        
+Ly = 1        
+Nx = 50        # Number of grid points
+Ny = 50      
 alpha = 0.01    # Thermal diffusivity
 Tmax = 1000     
 dt = 0.01    
@@ -48,4 +48,6 @@ fig = plt.figure()
 result = get_heat_eq_solution(u_new, kx, ky, Nt, dt)
 anima = animation.ArtistAnimation(fig, result, interval=100, blit=True)
 anima.save('./results/heat_eq.gif', dpi=80, writer='pillow')
+
 plt.show()
+
