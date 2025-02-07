@@ -1,3 +1,4 @@
+- [Dynamic_Mode_Decomposition](#Dynamic_Mode_Decomposition)
 - [Hopping](#Hopping)
 - [Fourier](#Fourier)
 - [Rcnn-Pinns](#Rcnn_Pinns)
@@ -6,6 +7,10 @@
 
 # Just_For_Fun
 Here’s a collection of fun projects—some might be failed experiments, while some result in interesting creations. 
+
+## Dynamic_Mode_Decomposition
+This project implements Dynamic Mode Decomposition (DMD) on a movie dataset to separate and visualize the high and low-frequency components of the video. Which demonstrates a powerful technique for analyzing time-series or spatiotemporal data.
+![Dynamic_Mode_Decomposition](./results/output_animation.gif)
 
 ## Hopping
 ![Hopping](./results/hopalong_attractor.png)
